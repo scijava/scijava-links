@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>40.0.0</version>
+		<relativePath />
+	</parent>
+
+	<groupId>org.scijava</groupId>
+	<artifactId>scijava-links</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+
+	<name>SciJava Links</name>
+	<description>URL scheme handlers for SciJava.</description>
+	<url>https://github.com/scijava/scijava-links</url>
+	<inceptionYear>2023</inceptionYear>
+	<organization>
+		<name>SciJava</name>
+		<url>https://scijava.org/</url>
+	</organization>
+
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>ctrueden</id>
+			<name>Curtis Rueden</name>
+			<url>https://imagej.net/people/ctrueden</url>
+			<roles>
+				<role>founder</role>
+				<role>lead</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Marwan Zouinkhi</name>
+			<url>https://imagej.net/people/mzouink</url>
+			<roles><role>founder</role></roles>
+			<properties><id>mzouink</id></properties>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>Image.sc Forum</name>
+			<archive>https://forum.image.sc/tag/scijava</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:https://github.com/scijava/scijava-links</connection>
+		<developerConnection>scm:git:git@github.com:scijava/scijava-links</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/scijava/scijava-links</url>
+	</scm>
+
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/scijava/scijava-links/issues</url>
+	</issueManagement>
+
+	<ciManagement>
+		<system>GitHub Actions</system>
+		<url>https://github.com/scijava/scijava-links/actions</url>
+	</ciManagement>
+
+	<properties>
+		<package-name>org.scijava.links</package-name>
+		<scijava.jvm.version>11</scijava.jvm.version>
+		<license.licenseName>bsd_2</license.licenseName>
+		<license.copyrightOwners>SciJava developers.</license.copyrightOwners>
+
+		<!-- NB: Deploy releases to the SciJava Maven repository. -->
+		<releaseProfiles>sign,deploy-to-scijava</releaseProfiles>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.scijava</groupId>
+			<artifactId>scijava-common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
