@@ -1,8 +1,8 @@
 /*-
  * #%L
- * SciJava Common shared library for SciJava software.
+ * URL scheme handlers for SciJava.
  * %%
- * Copyright (C) 2009 - 2023 SciJava developers.
+ * Copyright (C) 2023 - 2025 SciJava developers.
  * %%
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
