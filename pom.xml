@@ -11,7 +11,7 @@
 
 	<groupId>org.scijava</groupId>
 	<artifactId>scijava-links</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 
 	<name>SciJava Links</name>
 	<description>URL scheme handlers for SciJava.</description>
